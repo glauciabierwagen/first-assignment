@@ -12,22 +12,108 @@
 // EXTRA: exitAccount, should be a function
 // EXTRA = optional
 
-const accountObject = {
+const accountName = "Gláucia Bierwagen";
+let balance = 100;
+const number = parseFloat(prompt("Select a choice. 1) See balance. 2) Make a deposit. 3) Make a withdrawl. 4) Get Account Name. 5) Exit. Type a number"));
+alert(number);
+if (number == 1) {
+  function getBalance() { 
+    return`balance is ${this.balance}`;
+  }
+  alert(`The balance is ${balance}`);
+  let number = parseFloat(prompt("Select a choice. 1) See balance. 2) Make a deposit. 3) Make a withdrawl. 4) Get Account Name. 5) Exit. Type a number."));
+  } else if (number == 2){
+    const value = parseFloat(prompt("How much would you like to deposit? Type the value.")); 
+    function deposit() { 
+      if (value >= 1  && value != " ") {
+      totalBalance = balance + value;
+      alert(`Now the total balance is ${this.totalBalance}`);
+      } else {
+        alert("It is a not valid number!");
+    }
+  }
+   else if (number == 3) {
+    const value2 = parseFloat(prompt("How much money would you like to withdrawal? Type the value.")); 
+    function widthdrawl() { 
+      if (value2 >= 1  && value2 != " ") {
+      totalBalance2 = balance - value2;
+      alert(`Now the total balance is ${this.totalBalance2}`);
+    } else {
+      alert("It is a not valid number!");
+    }
+  }     
+    console.log("That was a not cool number");
+  } else if (number == 4) {
+    console.log("That was a not cool number");
+ } else if (number !== 5) {
+  console.log("That was a not cool number");}
+  else {
+    alert("It is a not valid number!");
+  }
+
+
+/*switch (number) {
+  case "1":
+    number = "1";
+    alert(number);
+    function getBalance() { 
+      alert(`The balance is ${balance}`);
+      return `${this.balance}`;
+    }
+    alert(`The balance is ${balance}`);
+    //const message = parseFloat(prompt("Select a choice. 1) See balance. 2) Make a deposit. 3) Make a withdrawl. 4) Get Account Name. 5) Exit. Type a number."));
+  break;*/
+  /*case "2":
+    number = 2;
+    function deposit() { 
+      prompt("How much would you like to deposit? Type the value."); 
+      value: 1;
+      if (value <= 0) {
+        alert("It is not a valid value!");
+      } else {
+        balance = balance + value;
+        return balance;
+      }
+      alert(`The balance is ${balance}`);
+      break;*/
+  /*default:
+    console.log("Not a valid number");*/     
+    
+  /*case "3":
+      console.log("Write some codes examples");
+      break;
+  case "4":
+      console.log("Give studentes feedback");
+      console.log("Got to the gym");
+      break;
+  default:
+      console.log("Not a valid number");       
+};*/ 
+
+
+/*const accountObject = {
   accountName: "Gláucia Bierwagen",
   balance: 100,
-}
-const message = parseFloat(prompt("Select a choice. 1) See balance. 2) Make a deposit. 3) Make a withdrawl. 4) Get Account Name. 5) Exit"));
+  number: 1, 
+  atm: function choice() {
+    const message = parseFloat(prompt("Select a choice. 1) See balance. 2) Make a deposit. 3) Make a withdrawl. 4) Get Account Name. 5) Exit. Type a number."));
+  const number = 1;
+  console.log(number);
+    return e;
+  },
+}*/
+//const message = parseFloat(prompt("Select a choice. 1) See balance. 2) Make a deposit. 3) Make a withdrawl. 4) Get Account Name. 5) Exit"));
 
 
-function atm() {
+/*function atm() {
   const message = parseFloat(prompt("Select a choice. 1) See balance. 2) Make a deposit. 3) Make a withdrawl. 4) Get Account Name. 5) Exit"));
   const number = 1;
   switch (number) {
     case 1:
-      function getbalance() { 
-      return balance;
+      getBalance: function() { 
+      return `${this.balance}`;
       }
-      console.log(`The balance is: ${balance}`);
+      console.log(`The balance is ${this.getbalance()}`);
       break;
     case 2:
       prompt("Make a deposit"); 
@@ -44,18 +130,38 @@ function atm() {
     default:
         console.log("Not a valid number");       
   }
-}
+}*/
+
+/*const glauciaObject2 = {
+  firstName2: "Glaucia",
+  lastName: "Silva",
+  birthYear: 1978,
+  age: 2022 - 1978,
+  job2: "teacher", 
+  cats: ["Samba", "Kika", "Juca"],
+  hasDriversLicense2: true,
+
+  calcAge: function() {
+    console.log(this);
+    return 2022 - this.birthYear;
+  },
+  getSummary: function() {
+    return `${this.firstName2} is a ${this.calcAge()} years old ${this.job2
+    }. And she has ${this.hasDriversLicense2 ? "a" : "no"} drivers license`;
+  }
+};
+console.log(glauciaObject2.getSummary());*/
 
 
 //Switch is an alernative way of writing a complicated if/else statement//
 
-const number = 1;
+/*const number = 1;
 switch (number) {
     case 1:
-      function getbalance() { 
-      return balance;
+        function getBalance() { 
+        console.log(balance);
+        return `The balance is ${this.balance}`;
       }
-      console.log(`The balance is: $(balance)`);
       break;
     case 2:
       prompt("Make a deposit"); 
@@ -72,19 +178,14 @@ switch (number) {
     default:
         console.log("Not a valid number");       
 }
+*/
 
-
-
-function getbalance() {
-  return this.balance;
-} 
-
-console.log(accountObject);
+/*console.log(accountObject);
 
 function chocolateCake(butter, chocolate, eggs) {
   const cake = `A simple cake with ${butter} cup of butter, ${chocolate} cup of chocolate and ${eggs} eggs`;
   return cake;
-}
+}*/
 
 // The object properties should work as following:
 // - accountName: the account holders name
@@ -126,11 +227,11 @@ function chocolateCake(butter, chocolate, eggs) {
 // to the console. But you will use prompt instead of just regular console.
 
 // to handle one of the potential errors you can use this built in method:
-const variableName = 10;
-isNaN(variableName);
+//const variableName = 10;
+//isNaN(variableName);
 
 //function atm() {
   //const message = parseFloat(prompt("Display message"));
   // you need to answer the question why we are using parseFloat() method here
   // either use a if/else statement or a switch. Write a comment and motivate your choice
-//}
+//}*/
