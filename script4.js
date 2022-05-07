@@ -8,7 +8,6 @@ const accountObject = {
   balance: 100.00,
   depoSit: 0.00, 
   number: 0,
-
   /*Function getBalance - to display the account balance for the user*/
   getBalance: function() {
     return `Your balance in the account is: $ ${this.balance}. 
@@ -26,7 +25,7 @@ const accountObject = {
           Is there anything else you would like to do? 
           Click on OK to go back to the main menu`;
       } else {
-          return `It is a not valid number! 
+          return `It is not a valid number! 
           Is there anything else would you like to do? 
           Click on OK to go back to the main menu.`;
       }
@@ -77,7 +76,7 @@ function atm() {
   switch (option) {
   case 1:
   return(accountObject.getBalance()); 
-  break;
+  gibreak;
   case 2:
     return(accountObject.makeDeposit());
     break;
