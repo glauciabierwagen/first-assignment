@@ -53,22 +53,22 @@ const accountObject = {
     Is there anything else would you like to do? 
     Click on OK to go back to the main menu.`;
   },
+  /*Function accountError was created to verify if the user can access the account. It was created a fictitious account number. 
+  Possibly it isn't a type of number which exist in real life. */
+  accountError: function() {
+    number = parseInt(prompt("Type the number of your account (Four digits)")); 
+    if ((number>=1000) && (number<=9999) && (number!= " ")) {
+      return (atm()); 
+    } else {
+    message = alert(`The number the account is wrong. Try it again!`);
+    return (accountObject.accountError());
+  }
+  }
 };
-/*Function accountError was created to verify if the user can access the account. It was created a fictitious account number. 
-Possibly it isn't a type of number which exist in real life.  */
-function accountError() {
-  number = parseInt(prompt("Type the number of your account (Four digits)")); 
-  if ((this.number>=1) && (this.number<=9999) && (this.number!= " ")) {
-    return (atm()); 
-  } else {
-  message = alert(`The number the account is wrong. Try it again!`);
-  return (accountError());
-}
-}
-alert(accountError());
+
+alert(accountObject.accountError());
 // Ver se dá para fazer retornos na funcão accountError e retorno para o menu inicial
 function atm() {
-  
   do {
   option = parseInt(prompt("Select a choice:\n1 - See balance.\n2 - Make a deposit.\n3 - Make a withdrawal.\n4 - Get account name. \n0 - Exit\n Type a number.")); //Initial menu
   /*Explaining switch use: for me with a more than three possibilities is a better alternative way of writting a complicated than if/else statement.

@@ -5,15 +5,15 @@ In this assignment you will make a small program that will simulate a bank accou
 
 In this assignment you will have to use:
 
-object
-functions
+- object
+- functions
 this keyword
-if/else statement or switch
-prompt or only the console
-conditional operators
-You will also have to handle errors, like wrong input. All functions for this assignment except the atm() function should be properties to the account object.
+- if/else statement or switch
+- prompt or only the console
+- conditional operators
+- You will also have to handle errors, like wrong input. All functions for this assignment except the atm() function should be properties to the account object.
 
-REQUIREMENTS
+<b> Requirements </b>
 
 A user should NOT be able to deposit och withdraw negative number!
 A user should NOT be able to deposit or withdraw an empty string, leaving the input empty
@@ -21,7 +21,9 @@ A user should NOT be able to withdraw a larger total sum that the actual balance
 A user should NOT be able to put anything that is NOT a number in the input
 You can find screenshots in this repo so you can see how a menu can look like.
 
-GUIDANCE: The objects should have the following properties. You can also see what data type each property should be. Object name: account Properties of the object: accountName: String, balance: Number (initiate this to 100 from start), getBalance: function, deposit: function, withdrawal: function, getAccountName: function, accountError: function, exitAccount: function
+<b> Guidance </b>
+
+The objects should have the following properties. You can also see what data type each property should be. Object name: account Properties of the object: accountName: String, balance: Number (initiate this to 100 from start), getBalance: function, deposit: function, withdrawal: function, getAccountName: function, accountError: function, exitAccount: function
 
 The object should handle all of the functionality (logic). You also need to create a function called atm() that should be responsible for showing the menu to the user and based on the user input show the correct choice.
 
