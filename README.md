@@ -1,5 +1,5 @@
-# first-assignment
- <b> First Assignemnt JavaScript </b>
+# First Assignment JavaScript
+ <b> Course IT Women </b>
 
 In this assignment you will make a small program that will simulate a bank account and atm (a cash machine). You will get some guidance that will help you solve this assignment.
 
